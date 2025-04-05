@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cientific calculator</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+    <div id="container-menu">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <ul>
+            <li><a href="#"><i class="bx bxs-calculator"></i><p>Basic Calculator</p></a></li>
+            <li><a href="#"><i class='bx bxl-react'></i><p>Cientific Calculator</p></a></li>
+            <li><a href="#"><i class='bx bxs-spreadsheet' ></i><p>Graphics</p></a></li>
+            <li><a href="#"><i class='bx bx-coin-stack' ></i><p>Coin</p></a></li>
+            <li><a href="#"><i class='bx bxs-shopping-bag-alt' ></i><p>Weight</p></a></li>
+            <li><a href="#"><i class='bx bxs-album' ></i><p>Bites converter</p></a></li>
+            <li><a href="#"><i class='bx bx-math'></i><p>Fibonnaci creator</p></a></li>
+            <li><a href="#"><i class='bx bx-book-bookmark'></i><p>Pi Number</p></a></li>
+            <li><a href="#"><i class='bx bxs-report' ></i><p>Degrees</p></a></li>
+        </ul>
+    </div>    
+    <div id="calculator-area">
+        <div id="container-calculator">
+        <div id="calculator-block">
+            <div id="calculator-window">
+                <div id="calculator-content"></div>
+            <div id="window-bar"></div>
+        </div>
+        <div id="calculator-buttons">
+            <div id="calculator-firstline">
+                <button class="operator" onclick="Percentage()">%</button>
+                <button class="operator" onclick="DelHistory()">CH</button>
+                <button class="operator" onclick="Del()">CE</button>
+                <button class="operator">!</button>
+
+            </div>
+            <div id="calculator-seconline">
+                <button class="number" onclick="AppendNumber(7)">7</button>
+                <button class="number"onclick="AppendNumber(8)">8</button>
+                <button class="number" onclick="AppendNumber(9)">9</button>
+                <button class="operator" onclick="Operator('/')">/</button>
+
+            </div>
+            <div id="calculator-thirdline">
+                <button class="number"onclick="AppendNumber(4)">4</button>
+                <button class="number" onclick="AppendNumber(5)">5</button>
+                <button class="number" onclick="AppendNumber(6)">6</button>
+                <button class="operator" onclick="Operator('*')">*</button>
+
+            </div>
+            <div id="calculator-forthline">
+                <button class="number" onclick="AppendNumber(1)">1</button>
+                <button class="number" onclick="AppendNumber(2)">2</button>
+                <button class="number" onclick="AppendNumber(3)">3</button>
+                <button class="operator" onclick="Operator('+')">+</button>
+
+            </div>
+            <div id="calculator-fiveline">
+                <button class="number" onclick="AppendNumber(0)">0</button>
+                <button class="operator" onclick="Operator('-')">-</button>
+                <button class="operator" onclick="Equal()">=</button>
+                <button class="operator" onclick="Operator('.')">.</button>
+
+            </div>
+        
+        </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="container-history">
+        <div id="toggle-dark">
+            <div id="ball">
+            </div>
+        </div>
+        <p>History</p>
+    </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
