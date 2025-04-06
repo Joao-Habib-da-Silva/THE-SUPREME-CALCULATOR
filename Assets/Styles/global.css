@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "Roboto Flex";
+}
+
+#toggle-dark {
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    background-color: #011627;
+}
+
+#ball {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s ease-in-out;
+    border-radius: 50%;
+    background-color: #a1b4bf;
+}
+
+#ball.dark {
+    margin-left: 55px;
+}
+
+:root {
+    --background: #b7e4c7;
+    --menu: #036666;
+    --items: #40916c;
+    --items-hover: #12372a;
+    --operator: #2c405c;
+    --operator-hover: #1d3557;
+    --calculator: #036666;
+    --calculator-window: #004e64;
+    --number: #abff4f;
+    --number-hover: #29bf12;
+}
+
+:root.dark {
+    --background: #03071e;
+    --menu: #22223b;
+    --items: #2c3f61;
+    --items-hover: #778da9;
+    --operator: #2c7da0;
+    --operator-hover: #0466c8;
+    --calculator: #001845;
+    --calculator-window: #0466c8;
+    --number: #003566;
+    --number-hover: #001d3d;
+}
+
+::selection {
+    background-color: #98c1d9;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    background-color: var(--background);
+    display: flex;
+    transition: 0.5s ease-in-out;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+#menu-icon {
+    background-color: var(--items);
+    color: white;
+    margin-left: 220px;
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#container-menu.close {
+    transform: translateX(-200px);
+}
+
+#container-menu p {
+    overflow-y: hidden;
+    margin-left: 10px;
+    font-weight: 900;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+#container-menu.close a {
+    padding-left: 0px;
+}
+
+#container-menu.close a {
+    width: 60px;
+    padding-left: 5px;
+    height: 60px;
+    margin-left: 218px;
+    transition: 0.5s ease-in-out;
+}
+
+#container-menu.close p {
+    width: 0%;
+    transition: 0.5s ease-in-out;
+}
+
+#menu-icon:hover {
+    background-color: var(--items-hover);
+}
+
+#container-menu {
+    background-color: var(--menu);
+    width: 20%;
+    transition: 0.5s ease-in-out;
+}
+
+#container-menu ul {
+    margin-top: 40px;
+}
+
+#container-menu li {
+    list-style: none;
+    margin-bottom: 22px;
+}
+
+#container-menu a {
+    background-color: var(--items);
+    font-size: 1.65rem;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 25px;
+    border-radius: 40px;
+    padding-left: 10px;
+    color: white;
+    display: flex;
+    transition: 0.5s ease-in-out;
+    align-items: center;
+    width: 250px;
+}
+
+#container-menu a:hover {
+    background-color: var(--items-hover);
+    transition: 0.5s linear;
+}
+
+#container-menu i {
+    font-size: 3rem;
+    width: 60px;
+}

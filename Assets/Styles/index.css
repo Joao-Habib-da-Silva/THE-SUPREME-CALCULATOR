@@ -1,0 +1,116 @@
+#calculator-area {
+    background-color:  var(--background);
+    display: flex;
+    transition: 0.5s ease-in-out;
+    width: 60%;
+    padding-left: 250px;
+    padding-top: 200px ;
+}
+#container-calculator {
+    background-color: var(--calculator);
+    height: 65vh;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    width: 50vh;
+    }
+#calculator-block {
+    width: 100%;
+    height: 100%;
+}
+#calculator-window {
+    height: 20%;
+    display: flex;
+    justify-content: end;
+    font-size: 2rem;
+    align-items: center;
+    padding-right: 20px;
+    transition: 0.5s ease-in-out;
+    font-weight: 600;
+    background-color: var(--calculator-window)
+}
+#window-bar {
+    background-color: white;
+    width: 5px;
+    border-radius: 30px;
+    height: 50px;
+    animation: 0.5s ease-in alternate infinite blink;
+}
+#calculator-content {
+    color: white;
+    margin-right: 10px;
+}
+@keyframes blink {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 50px;
+    }
+}
+#calculator-buttons {
+    background-color: var(--calculator);
+    height: 80%;
+    padding-left: 50px;
+    transition: 0.5s ease-in-out;
+    padding-top: 20px;
+}
+#calculator-buttons div {
+    margin-bottom: 5px;
+}
+#calculator-buttons button {
+    width: 65px;
+    height: 65px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    gap: 30px;
+}
+.number {
+    background-color:var(--number);
+    transition: 0.5s ease-in-out;
+}
+.number:hover {
+    background-color: var(--number-hover);
+    transition: 0.5s linear;
+}
+#container-history p {
+    margin-left: 20px;
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+}
+.divhistory {
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: 800;
+    background-color: var(--items-hover);
+    color: white;
+    letter-spacing: 2px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    border-radius: 30px;
+    margin-right: 10px ;
+    width:  100%;
+    overflow-x: visible;
+}
+
+#container-history {
+    background-color: var(--menu);
+    width: 20%;
+}
+.operator {
+    background-color: var(--operator);
+    transition: 0.5s linear;
+}
+
+.operator:hover {
+    background-color: var(--operator-hover);
+    transition: 0.5s linear;
+}
