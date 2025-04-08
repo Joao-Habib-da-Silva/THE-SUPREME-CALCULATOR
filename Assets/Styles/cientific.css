@@ -3,8 +3,7 @@
     display: flex;
     transition: 0.5s ease-in-out;
     width: 60%;
-    padding-left: 250px;
-    padding-top: 200px;
+    padding-top: 50px;
 }
 #container-history {
     background-color: var(--menu);
@@ -34,4 +33,126 @@
     margin-right: 10px;
     width: 100%;
     overflow-x: visible;
+}
+#cientific-calculator {
+    background-color: blue;
+    width: 90% ;
+    height: 600px;
+    margin-left: 40px;
+    border-radius: 30px;
+}
+#calculator-visor {
+    background-color: var(--calculator-window);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+
+}
+#window-bar {
+    background-color: white;
+    width: 5px;
+    border-radius: 30px;
+    height: 50px;
+    animation: 0.5s ease-in alternate infinite blink;
+}
+
+#calculator-content {
+    color: white;
+    margin-right: 10px;
+}
+
+@keyframes blink {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 50px;
+    }
+}
+#calculatorbuttons {
+    display: flex;
+    background-color: var(--calculator);
+    height: 80%;
+}
+#tool {
+    background-color: var(--calculator);
+    width: 45%;
+    padding-top: 80px;
+    padding-left: 17px;
+}
+#numbers {
+    background-color: var(--calculator);
+    width:55%;
+}
+.tools {
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--operator);
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.tools:hover {
+    transition: 0.5s ease-in-out;
+    background-color: var(--operator-hover);
+}
+#memory {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#numbers {
+    overflow-y: hidden;
+}
+.memory {
+    background-color: #34a0a4;
+    transition: 0.5s ease-in-out;
+}
+.memory:hover {
+    background-color: #1a759f;
+}
+.operator {
+    background-color: var(--operator);
+    transition: 0.5s ease-in-out;
+}
+.operator:hover {
+    background-color: var(--operator-hover);
+    transition: 0.5s ease-in-out;
+}
+.number {
+    transition: 0.5s ease-in-out;
+    background-color: var(--number);
+}
+.number:hover {
+    transition: 0.5s ease-in-out;
+    background-color: var(--number-hover);
+}
+#numbers button {
+    border: none;
+    width: 95px;
+    border-radius: 10px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+#firstline, #secondline, #thirdline, #forthline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13.5vh;
 }

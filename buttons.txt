@@ -1,0 +1,22 @@
+Soma - feito
+Subtração - feito
+Multiplicação - feito
+Divisão- feito
+Potenciação- feito
+Parenteses - feito
+Raiz quadrada- feito
+Raiz Cubica - feito
+Logaritmo- feito
+Logaritmo natural - feito
+PI- feito
+Seno, cosseno e tangente- feito
+Fatoriais- feito
+Grau e radianos
+Número de Euler
+Histórico
+Memória M+, M-, MR, MC 
+
+
+
+Ideias
+Poderia eu fazer um mmc né? seria uma boa para projetos futuros

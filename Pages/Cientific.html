@@ -13,19 +13,86 @@
     <div id="container-menu">
         <i class="bx bx-menu" id="menu-icon"></i>
         <ul>
-            <li><a href="index.html"><i class="bx bxs-calculator"></i><p>Basic Calculator</p></a></li>
-            <li><a href="./Pages/Cientific.html"><i class='bx bxl-react'></i><p>Cientific Calculator</p></a></li>
-            <li><a href="./Pages/graphic.html"><i class='bx bxs-spreadsheet' ></i><p>Graphics</p></a></li>
-            <li><a href="./Pages/Coin.html"><i class='bx bx-coin-stack' ></i><p>Coin</p></a></li>
-            <li><a href="./Pages/Weight.html"><i class='bx bxs-shopping-bag-alt' ></i><p>Weight</p></a></li>
-            <li><a href="./Pages/Bites.html"><i class='bx bxs-album' ></i><p>Bites converter</p></a></li>
-            <li><a href="./Pages/Fibonnaci.html"><i class='bx bx-math'></i><p>Fibonnaci creator</p></a></li>
-            <li><a href="./Pages/Pi.html"><i class='bx bx-book-bookmark'></i><p>Pi Number</p></a></li>
-            <li><a href="./Pages/Degrees.html"><i class='bx bxs-report' ></i><p>Degrees</p></a></li>
+            <li><a href="../index.html"><i class="bx bxs-calculator"></i><p>Basic Calculator</p></a></li>
+            <li><a href="./Cientific.html"><i class='bx bxl-react'></i><p>Cientific Calculator</p></a></li>
+            <li><a href="./graphic.html"><i class='bx bxs-spreadsheet' ></i><p>Graphics</p></a></li>
+            <li><a href="./Coin.html"><i class='bx bx-coin-stack' ></i><p>Coin</p></a></li>
+            <li><a href="./Weight.html"><i class='bx bxs-shopping-bag-alt' ></i><p>Weight</p></a></li>
+            <li><a href="./Bites.html"><i class='bx bxs-album' ></i><p>Bites converter</p></a></li>
+            <li><a href="./Fibonnaci.html"><i class='bx bx-math'></i><p>Fibonnaci creator</p></a></li>
+            <li><a href="./Pi.html"><i class='bx bx-book-bookmark'></i><p>Pi Number</p></a></li>
+            <li><a href="./Degrees.html"><i class='bx bxs-report' ></i><p>Degrees</p></a></li>
         </ul>
     </div>
         <div id="calculator-area">
-            
+            <div id="cientific-calculator">
+                <div id="calculator-visor">
+                    <div id="calculator-content">
+
+                </div>
+                            <div id="window-bar"></div>
+
+                </div>
+                <div id="calculatorbuttons">
+                    <div id="tool">
+                         <div id="tools-firstline">
+                          <button onclick="Squareroot(2)" class="tools">√2</button>
+                        <button onclick="Squareroot(3)" class="tools">√3</button>
+                        <button onclick="Logaritm(10)" class="tools">Log</button>
+                      </div>
+                      <div id="tools-secondline">
+                        <button onclick="Fatorial()" class="tools">!</button>
+                        <button onclick="Logaritm(2.71)" class="tools">Ln</button>
+                        <button onclick="AppendNumber(3.14)"class="tools">π</button>
+                      
+                      </div>
+                        <div id="tools-thirdline">
+                            
+                      <button class="tools">Sen</button>
+                        <button class="tools">Cos</button>
+                        <button class="tools">Tan</button>
+                    
+                        </div>  
+                        <div id="tools-forthline">
+                            <button onclick="AppendOperation('(')" class="tools">(</button>
+                            <button onclick="AppendOperation('(')" class="tools">)</button>
+                        </div>
+                    </div>
+                    <div id="numbers">
+                        <div id="memory">
+                            <button class="memory">M+</button>
+                            <button class="memory">M-</button>
+                            <button class="memory">MR</button>
+                            <button class="memory">MC</button>
+                        </div>
+                        <div id="firstline">
+                            <button onclick="AppendNumber(7)" class="number">7</button>
+                            <button onclick="AppendNumber(8)" class="number">8</button>
+                            <button onclick="AppendNumber(9)" class="number">9</button>
+                            <button onclick="AppendOperation('+')" class="operator">+</button>
+                        </div>
+                        <div id="secondline">
+                            <button onclick="AppendNumber(4)" class="number">4</button>
+                            <button onclick="AppendNumber(5)" class="number">5</button>
+                            <button onclick="AppendNumber(6)" class="number">6</button>
+                            <button onclick="AppendOperation('-')" class="operator">-</button>
+                        </div>
+                        <div id="thirdline">
+                            <button onclick="AppendNumber(1)" class="number">1</button>
+                            <button onclick="AppendNumber(2)" class="number">2</button>
+                            <button onclick="AppendNumber(3)" class="number">3</button>
+                            <button onclick="AppendOperation('*')" class="operator">*</button>
+                        </div>
+                        <div id="forthline">
+                            <button onclick="AppendNumber(0)" class="number">0</button>
+                            <button onclick="AppendOperation('/')" class="operator">/</button>
+                            <button onclick="AppendOperation('**')" class="operator">**</button>
+                            <button onclick="Equal()" class="operator">=</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
             <div id="container-history">
         <div id="toggle-dark">
@@ -36,6 +103,7 @@
     </div>
     </div>    
     </div>
+    <script src="../Assets/Javascript/global.js"></script>
     <script src="../Assets/Javascript/script.js"></script>
 </body>
 </html>
