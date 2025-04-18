@@ -8,9 +8,6 @@ function AppendNumber(param) {
 function Operator(param) {
     content.innerHTML += `${param}`
 }
-function Del() {
-    content.innerHTML = ""
-}    
 function Equal() {
     var result = eval(content.textContent)
     var history = window.document.getElementById("container-history");

@@ -20,7 +20,6 @@
             <li><a href="./Weight.html"><i class='bx bxs-shopping-bag-alt' ></i><p>Weight</p></a></li>
             <li><a href="./Bites.html"><i class='bx bxs-album' ></i><p>Bites converter</p></a></li>
             <li><a href="./Fibonnaci.html"><i class='bx bx-math'></i><p>Fibonnaci creator</p></a></li>
-            <li><a href="./Pi.html"><i class='bx bx-book-bookmark'></i><p>Pi Number</p></a></li>
             <li><a href="./Degrees.html"><i class='bx bxs-report' ></i><p>Degrees</p></a></li>
         </ul>
     </div>
@@ -38,24 +37,26 @@
                          <div id="tools-firstline">
                           <button onclick="Squareroot(2)" class="tools">√2</button>
                         <button onclick="Squareroot(3)" class="tools">√3</button>
-                        <button onclick="Logaritm(10)" class="tools">Log</button>
+                        <button onclick="Logaritm()" class="tools">Log</button>
                       </div>
                       <div id="tools-secondline">
-                        <button onclick="Fatorial()" class="tools">!</button>
-                        <button onclick="Logaritm(2.71)" class="tools">Ln</button>
+                        <button onclick="Fator()" class="tools">!</button>
+                        <button onclick="NaturalLog()" class="tools">Ln</button>
                         <button onclick="AppendNumber(3.14)"class="tools">π</button>
                       
                       </div>
                         <div id="tools-thirdline">
                             
-                      <button class="tools">Sen</button>
-                        <button class="tools">Cos</button>
-                        <button class="tools">Tan</button>
+                      <button class="tools" onclick="Sen()">Sen</button>
+                        <button class="tools" onclick="Cos()">Cos</button>
+                        <button class="tools" onclick="Tan()">Tan</button>
                     
                         </div>  
                         <div id="tools-forthline">
                             <button onclick="AppendOperation('(')" class="tools">(</button>
-                            <button onclick="AppendOperation('(')" class="tools">)</button>
+                            <button onclick="AppendOperation(')')" class="tools">)</button>
+                            <button onclick="Del()" class="tools">CE</button>
+
                         </div>
                     </div>
                     <div id="numbers">
@@ -104,6 +105,6 @@
     </div>    
     </div>
     <script src="../Assets/Javascript/global.js"></script>
-    <script src="../Assets/Javascript/script.js"></script>
+    <script src="../Assets/Javascript/cientific.js"></script>
 </body>
 </html>

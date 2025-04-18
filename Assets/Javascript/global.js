@@ -39,6 +39,11 @@ function Equal() {
     create.innerHTML = "Indefinido";
   }
   content.innerHTML = result;
-  create.innerHTML += `=${result}`;
+
+  create.innerHTML += `  =${result}`;
   history.appendChild(create);
 }
+
+function Del() {
+  content.innerHTML = "";
+}    

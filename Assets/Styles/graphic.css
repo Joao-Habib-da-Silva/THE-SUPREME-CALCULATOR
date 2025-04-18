@@ -1,0 +1,44 @@
+
+#toggle-dark {
+    margin-left: 175px;
+    transition: 0.5s ease-in-out;
+}
+#container-menu.close #toggle-dark {
+    width: 0px;
+    transition: 0.5s ease-in-out;
+}
+#calculator {
+    min-width: 80%;
+    height: 100vh;
+    font-family: "Roboto Flex";
+}
+.dcg-keys {
+    background-color: var(--calculator);
+}
+#container-menu.close #calculator {
+    background-color: red;
+    margin-right: 100px;
+}
+#calculator .dcg-expression-top-bar div {
+    overflow-y: hidden;
+    transition: 0.5s ease-in-out;
+    color: white;
+    border: none;
+    background-color: var(--items);
+}
+.dcg-keypad-btn-container .dcg-btn-dark-on-gray span {
+    border: none;
+    color: white;
+}
+.dcg-mq-math-mode, .dcg-static-mathquill-view, .dcg-expressions-branding div, .dcg-circular-icon-container, .dcg-powered-by{
+    overflow-y: hidden;
+}
+.dcg-do-not-blur, .dcg-expressionitem, .dcg-mathitem, .dcg-selected {
+    overflow-y: hidden;
+}
+.dcg-expression-top-bar {
+    padding: 0;
+}
+.dcg-mq-root-block var, span {
+    overflow-y: hidden;
+}

@@ -98,7 +98,7 @@
     border-radius: 30px;
     margin-right: 10px ;
     width:  100%;
-    overflow-x: visible;
+    overflow-x:auto;
 }
 
 #container-history {
