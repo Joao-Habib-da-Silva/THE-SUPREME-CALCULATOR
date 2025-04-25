@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     padding-left: 7px;
-    background-color: #011627;
+    background-color: var(--items);
 }
 
 #ball {
@@ -37,7 +37,22 @@
 #ball.dark {
     margin-left: 55px;
 }
-
+::-webkit-scrollbar {
+    width: 20px;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    background-color: var(--background);
+}
+::-webkit-scrollbar-track {
+    background-color: var(--menu);
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--background);
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+}
 :root {
     --background: #b7e4c7;
     --menu: #036666;

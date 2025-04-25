@@ -45,7 +45,7 @@ window.document.addEventListener("keydown", function(event) {
     if(isNaN(event.key) == true) {
         console.log("Letra basica")
     }
-    if(event.key == "-" || event.key == "+"  || event.key == "*" || event.key == "/") {
+    if(event.key == "-" || event.key == "+"  || event.key == "*" || event.key == "/" || event.key == ".") {
         content.innerHTML += `${event.key}`
     }
     if(event.key == "=" || event.key == "Enter") {
