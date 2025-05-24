@@ -31,7 +31,7 @@ async function Coin() {
 
     if (first_input.value == "" && second_input.value == "") {
       var alert = document.getElementById("alert");
-      alert.style.opacity = 1;
+      alert.style.scale = 1;
     }
     
   } catch (error) {
@@ -42,7 +42,7 @@ async function Coin() {
 var button = document.getElementById("Ok-alert");
 button.addEventListener("click", function () {
   var alert = document.getElementById("alert");
-  alert.style.opacity = 0;
+  alert.style.scale = 0;
 });
 var trash = window.document.getElementById("trash")
 trash.addEventListener("click", function() {
